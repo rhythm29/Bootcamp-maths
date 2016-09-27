@@ -26,7 +26,7 @@ class Maths::Number
     end
   end
 
-  def halve
+  def collatz_conjecture
     number/2
   end
 

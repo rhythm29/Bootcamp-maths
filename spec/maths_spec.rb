@@ -75,7 +75,7 @@ describe Maths::Number do
     end
   end
 
-  describe "#halve" do
+  describe "#collatz_conjecture" do
     it "should return 0 when given 0" do
       number = Maths::Number.new(0)
       expect(number.halve).to eq(0)
