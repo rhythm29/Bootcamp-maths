@@ -100,5 +100,10 @@ describe Maths::Number do
       number = Maths::Number.new(-10)
       expect(number.halve).to eq(-5)
     end
+
+    it "should return -3 when given -5" do
+      number = Maths::Number.new(-5)
+      expect(number.halve).to eq(-3)
+    end
   end
 end
