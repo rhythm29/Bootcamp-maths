@@ -78,17 +78,17 @@ describe Maths::Number do
   describe "#collatz_conjecture" do
     it "should return 0 when given 0" do
       number = Maths::Number.new(0)
-      expect(number.halve).to eq(0)
+      expect(number.collatz_conjecture).to eq(0)
     end
 
     it "should return 1 when given 2" do
       number = Maths::Number.new(2)
-      expect(number.halve).to eq(1)
+      expect(number.collatz_conjecture).to eq(1)
     end
 
     it "should return -5 when given -10" do
       number = Maths::Number.new(-10)
-      expect(number.halve).to eq(-5)
+      expect(number.collatz_conjecture).to eq(-5)
     end
   end
 end
