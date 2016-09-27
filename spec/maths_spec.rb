@@ -47,4 +47,31 @@ describe Maths::Number do
       expect(number.n!).to eq(Float::INFINITY)
     end
   end
+
+  describe "sum_to_1" do
+    it "should return 1 when given 1" do
+      number = Maths::Number.new(1)
+      expect(number.sum_to_1).to eq(1)
+    end
+
+    it "should throw some error when given -2" do
+      number = Maths::Number.new(-2)
+      expect(number.sum_to_1).to eq("Please enter a positive number")
+    end
+
+    it "should return 0 when given 0" do
+      number = Maths::Number.new(0)
+      expect(number.sum_to_1).to eq(0)
+    end
+
+    it "should return 3 when given 2" do
+      number = Maths::Number.new(2)
+      expect(number.sum_to_1).to eq(3)
+    end
+
+    it "should return 15 when given 5" do
+      number = Maths::Number.new(5)
+      expect(number.sum_to_1).to eq(15)
+    end
+  end
 end

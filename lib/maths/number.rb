@@ -18,8 +18,15 @@ class Maths::Number
     end
   end
 
-  alias_method :n!, :factorial
+  def sum_to_1
+    if number < 0
+      "Please enter a positive number"
+    else
+      number * (number+1)/2
+    end
+  end
 
+  alias_method :n!, :factorial
   private
 
   attr_writer :number
