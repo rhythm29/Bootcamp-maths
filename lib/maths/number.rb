@@ -36,6 +36,9 @@ class Maths::Number
 
   def collatz_cycle_count
     count = 0
+    if number <= 0
+      return count
+    end
     while number != 1 do
       self.number = collatz_conjecture(number)
       count += 1

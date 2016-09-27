@@ -117,5 +117,15 @@ describe Maths::Number do
       number = Maths::Number.new(7)
       expect(number.collatz_cycle_count).to eq(16)
     end
+
+    it "should return 0 when given 0" do
+      number = Maths::Number.new(0)
+      expect(number.collatz_cycle_count).to eq(0)
+    end
+
+    it "should return 0 when given -1" do
+      number = Maths::Number.new(-1)
+      expect(number.collatz_cycle_count).to eq(0)
+    end
   end
 end
