@@ -27,7 +27,7 @@ class Maths::Number
   end
 
   def collatz_conjecture(num)
-    if num%2 == 0
+    if num.even?== 0
       num/2
     else
       (num*3)+1
@@ -35,10 +35,8 @@ class Maths::Number
   end
 
   def collatz_cycle_count
+    return 0 if number <= 1
     count = 0
-    if number <= 0
-      return count
-    end
     while number != 1 do
       self.number = collatz_conjecture(number)
       count += 1
