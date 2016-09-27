@@ -90,5 +90,11 @@ describe Maths::Number do
       number = Maths::Number.new(5)
       expect(number.collatz_conjecture).to eq(16)
     end
+
+    it "should return 172 when given 57" do
+      number = Maths::Number.new(57)
+      expect(number.collatz_conjecture).to eq(172)
+    end
+
   end
 end
