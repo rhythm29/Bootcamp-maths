@@ -74,4 +74,16 @@ describe Maths::Number do
       expect(number.sum_to_1).to eq(15)
     end
   end
+
+  describe "#halve" do
+    it "should return 0 when given 0" do
+      number = Maths::Number.new(0)
+      expect(number.halve).to eq(0)
+    end
+
+    it "should return 0 when given 1" do
+      number = Maths::Number.new(1)
+      expect(number.halve).to eq(0)
+    end
+  end
 end

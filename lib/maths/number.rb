@@ -26,6 +26,10 @@ class Maths::Number
     end
   end
 
+  def halve
+    0
+  end
+
   alias_method :n!, :factorial
   private
 
