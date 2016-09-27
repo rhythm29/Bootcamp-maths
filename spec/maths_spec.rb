@@ -81,29 +81,14 @@ describe Maths::Number do
       expect(number.halve).to eq(0)
     end
 
-    it "should return 0 when given 1" do
-      number = Maths::Number.new(1)
-      expect(number.halve).to eq(0)
-    end
-
     it "should return 1 when given 2" do
       number = Maths::Number.new(2)
       expect(number.halve).to eq(1)
     end
 
-    it "should return 99 when given 199" do
-      number = Maths::Number.new(199)
-      expect(number.halve).to eq(99)
-    end
-
     it "should return -5 when given -10" do
       number = Maths::Number.new(-10)
       expect(number.halve).to eq(-5)
-    end
-
-    it "should return -3 when given -5" do
-      number = Maths::Number.new(-5)
-      expect(number.halve).to eq(-3)
     end
   end
 end
