@@ -26,20 +26,21 @@ class Maths::Number
     end
   end
 
-  def collatz_conjecture
-    if number%2 == 0
-      number/2
+  def collatz_conjecture(num)
+    if num%2 == 0
+      num/2
     else
-      (number*3)+1
+      (num*3)+1
     end
   end
 
   def collatz_cycle_count
-    if number == 1
-      0
-    elsif number == 2
-      1
+    count = 0
+    while number != 1 do
+      self.number = collatz_conjecture(number)
+      count += 1
     end
+    count
   end
 
   alias_method :n!, :factorial
