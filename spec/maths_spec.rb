@@ -48,7 +48,7 @@ describe Maths::Number do
     end
   end
 
-  describe "sum_to_1" do
+  describe "#sum_to_1" do
     it "should return 1 when given 1" do
       number = Maths::Number.new(1)
       expect(number.sum_to_1).to eq(1)
