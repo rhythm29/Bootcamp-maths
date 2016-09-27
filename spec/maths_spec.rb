@@ -54,9 +54,9 @@ describe Maths::Number do
       expect(number.sum_to_1).to eq(1)
     end
 
-    it "should throw some error when given -2" do
+    it "should return 0 when given -2" do
       number = Maths::Number.new(-2)
-      expect(number.sum_to_1).to eq("Please enter a positive number")
+      expect(number.sum_to_1).to eq(0)
     end
 
     it "should return 0 when given 0" do
