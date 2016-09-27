@@ -34,6 +34,12 @@ class Maths::Number
     end
   end
 
+  def collatz_cycle_count
+    if number == 1
+      0
+    end
+  end
+
   alias_method :n!, :factorial
   private
 
