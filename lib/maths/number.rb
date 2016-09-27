@@ -20,6 +20,7 @@ class Maths::Number
 
   def sum_to_1
     if number < 0
+      # Hack Should be modified
       "Please enter a positive number"
     else
       number * (number+1)/2
