@@ -27,7 +27,7 @@ class Maths::Number
   end
 
   def halve
-    0
+    number/2
   end
 
   alias_method :n!, :factorial

@@ -85,5 +85,15 @@ describe Maths::Number do
       number = Maths::Number.new(1)
       expect(number.halve).to eq(0)
     end
+
+    it "should return 1 when given 2" do
+      number = Maths::Number.new(2)
+      expect(number.halve).to eq(1)
+    end
+
+    it "should return 99 when given 199" do
+      number = Maths::Number.new(199)
+      expect(number.halve).to eq(99)
+    end
   end
 end
