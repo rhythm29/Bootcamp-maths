@@ -86,11 +86,6 @@ describe Maths::Number do
       expect(number.collatz_conjecture).to eq(1)
     end
 
-    it "should return -5 when given -10" do
-      number = Maths::Number.new(-10)
-      expect(number.collatz_conjecture).to eq(-5)
-    end
-
     it "should return 16 when given 5" do
       number = Maths::Number.new(5)
       expect(number.collatz_conjecture).to eq(16)
