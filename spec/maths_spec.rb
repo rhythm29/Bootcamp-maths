@@ -107,5 +107,10 @@ describe Maths::Number do
       number = Maths::Number.new(1)
       expect(number.collatz_cycle_count).to eq(0)
     end
+
+    it "should return 1 when given 2" do
+      number = Maths::Number.new(2)
+      expect(number.collatz_cycle_count).to eq(1)
+    end
   end
 end

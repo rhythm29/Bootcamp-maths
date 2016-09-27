@@ -37,6 +37,8 @@ class Maths::Number
   def collatz_cycle_count
     if number == 1
       0
+    elsif number == 2
+      1
     end
   end
 
