@@ -27,7 +27,7 @@ class Maths::Number
   end
 
   def collatz_conjecture(num)
-    if num.even?== 0
+    if num.even?
       num/2
     else
       (num*3)+1
